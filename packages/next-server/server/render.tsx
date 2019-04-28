@@ -177,6 +177,7 @@ function renderDocument(
   return (
     '<!DOCTYPE html>' +
     renderToStaticMarkup(
+      // brizer: all data get by getInitialProps is put in document component's props
       <AmpModeContext.Provider value={ampMode}>
         <Document
           __NEXT_DATA__={{
