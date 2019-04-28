@@ -52,7 +52,7 @@ type LinkProps = {
   passHref?: boolean
   onError?: (error: Error) => void,
 }
-
+// brizer: Link component based on React
 class Link extends Component<LinkProps> {
   static propTypes?: any
   componentDidMount() {

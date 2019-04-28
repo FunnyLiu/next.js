@@ -15,7 +15,7 @@ export default class App extends React.Component<AppProps> {
   static childContextTypes = {
     router: PropTypes.object,
   }
-
+  // brizer: getInittialProps principle
   static async getInitialProps({ Component, ctx }: AppContext): Promise<AppInitialProps> {
     const pageProps = await loadGetInitialProps(Component, ctx)
     return { pageProps }
